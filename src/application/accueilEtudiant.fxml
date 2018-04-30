@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" styleClass="AnchorPane" stylesheets="@accueil.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EtudiantController">
+   <children>
+      <ImageView fx:id="imageClose" fitHeight="70.0" fitWidth="70.0" layoutX="940.0" layoutY="17.0">
+         <image>
+            <Image url="@bouton_fermer.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnRetour" layoutX="70.0" layoutY="685.0" mnemonicParsing="false" onAction="#handleButtonRetour" prefHeight="50.0" prefWidth="160.0" styleClass="colorButton" stylesheets="@accueil.css" text="Se déconnecter" />
+      <Label layoutX="254.0" layoutY="14.0" prefHeight="67.0" prefWidth="202.0" text="Bienvenue ">
+         <font>
+            <Font name="AR ESSENCE" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="login" layoutX="449.0" layoutY="13.0" prefHeight="70.0" prefWidth="246.0">
+         <font>
+            <Font name="AR ESSENCE" size="50.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="100.0" layoutY="17.0">
+         <image>
+            <Image url="@../../images/etudiant.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabView" layoutX="171.0" layoutY="122.0" prefHeight="211.0" prefWidth="721.0">
+         <columns>
+            <TableColumn fx:id="tabNom" prefWidth="170.0" text="Nom" />
+            <TableColumn fx:id="tabPrenom" prefWidth="185.0" text="Prénom" />
+            <TableColumn fx:id="tabEmail" prefWidth="152.0" text="Email" />
+            <TableColumn fx:id="tabGroupe" prefWidth="217.0" text="Groupe" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="834.0" layoutY="17.0">
+         <image>
+            <Image url="@../../images/etudiant.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="22.0" layoutY="87.0" prefHeight="35.0" prefWidth="297.0" text="Voici les membres de votre groupe :">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabView2" layoutX="50.0" layoutY="396.0" prefHeight="277.0" prefWidth="925.0">
+        <columns>
+            <TableColumn fx:id="tabSession" prefWidth="67.0" text="Session" />
+          <TableColumn fx:id="tabMatiere" prefWidth="155.0" text="Matière" />
+          <TableColumn fx:id="tabSalle" prefWidth="105.0" text="Salle" />
+            <TableColumn fx:id="tabDate" prefWidth="119.0" text="Date" />
+            <TableColumn fx:id="tabDebut" prefWidth="145.0" text="Heure de début" />
+            <TableColumn fx:id="tabFin" prefWidth="134.0" text="Heure de fin" />
+            <TableColumn fx:id="tabEnseignant" prefWidth="199.0" text="Enseignant" />
+        </columns>
+      </TableView>
+      <Label layoutX="23.0" layoutY="349.0" prefHeight="35.0" prefWidth="297.0" text="Voici votre emploi du temps :">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
